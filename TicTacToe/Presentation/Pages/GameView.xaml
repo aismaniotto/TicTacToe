@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="TicTacToe.Presentation.Pages.GameView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="{DynamicResource PageBackgroundColor}"
+    Visual="Material">
+    <ContentPage.Content>
+        <StackLayout
+            Margin="20"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand">
+            <Button HorizontalOptions="End" Text="Limpar" />
+            <Label
+                FontSize="25"
+                HorizontalTextAlignment="Start"
+                Text="Jogador X: " />
+            <Label
+                FontSize="25"
+                HorizontalTextAlignment="Start"
+                Text="Jogador 0: " />
+            <Grid Margin="0,20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Button
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Style="{StaticResource GameTile}" />
+                <Button
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Style="{StaticResource GameTile}" />
+                <Button
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    Style="{StaticResource GameTile}" />
+
+                <Button
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Style="{StaticResource GameTile}" />
+                <Button
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Style="{StaticResource GameTile}" />
+                <Button
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    Style="{StaticResource GameTile}" />
+
+                <Button
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Style="{StaticResource GameTile}" />
+                <Button
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Style="{StaticResource GameTile}" />
+                <Button
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Style="{StaticResource GameTile}" />
+            </Grid>
+            <Label
+                FontSize="25"
+                HorizontalOptions="Center"
+                Text="É a vez do jogador X"
+                VerticalOptions="End" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

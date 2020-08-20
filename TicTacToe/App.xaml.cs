@@ -1,6 +1,5 @@
-﻿using System;
+﻿using TicTacToe.Presentation.Pages;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace TicTacToe
 {
@@ -10,7 +9,7 @@ namespace TicTacToe
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new GameView();
         }
 
         protected override void OnStart()
