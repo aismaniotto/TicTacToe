@@ -25,7 +25,6 @@
         PlayerOWin,
         PlayerXWin,
         ItsATie,
-        OnProgress,
-        NotStarted
+        InProgress,
     }
 }

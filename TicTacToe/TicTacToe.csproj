@@ -20,5 +20,6 @@
     <Folder Include="Themes\" />
     <Folder Include="Presentation\Pages\" />
     <Folder Include="Game\" />
+    <Folder Include="Presentation\Converters\" />
   </ItemGroup>
 </Project>

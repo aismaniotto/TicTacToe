@@ -1,4 +1,5 @@
-﻿using System.Windows.Input;
+﻿using System.Threading.Tasks;
+using System.Windows.Input;
 using TicTacToe.Game;
 using Xamarin.Forms;
 
@@ -146,9 +147,11 @@ namespace TicTacToe.ViewModel
             GamePlay = new GamePlay();
             PlayCommand = new Command<Tile>(PlayCommandAction);
             ResetCommand = new Command(ResetCommandAction);
+
+            CheckingStatusOnOppening();
         }
 
-        private void PlayCommandAction(Tile tile)
+        private async void PlayCommandAction(Tile tile)
         {
             if (IsPlaying) return;
             IsPlaying = true;
@@ -156,8 +159,42 @@ namespace TicTacToe.ViewModel
             var gameStatus = GamePlay.PlayHere(tile);
             // Necessary notify because the attribution isn't done by the setter
             NotifyTile(tile);
+            if(gameStatus == Status.ItsATie)
+            {
+                await Application.Current.MainPage.DisplayAlert("Game over", "Empatou", "Ok");
+                ClearAllTiles();
+            } else if (gameStatus == Status.PlayerOWin)
+            {
+                ScoreO++;
+                await Application.Current.MainPage.DisplayAlert("Game over", "Jogador O ganhou", "Ok");
+                ClearAllTiles();
+            }
+            else if (gameStatus == Status.PlayerXWin)
+            {
+                ScoreX++;
+                await Application.Current.MainPage.DisplayAlert("Game over", "Jogador X ganhou", "Ok");
+                ClearAllTiles();
+            }
 
             IsPlaying = false;
+        }
+
+        private void CheckingStatusOnOppening()
+        {
+            var statusX = GamePlay.CheckCurrentStatus(Player.X);
+            if (statusX != Status.InProgress)
+            {
+                ClearAllTiles();
+            }
+            else
+            {
+                var statusO = GamePlay.CheckCurrentStatus(Player.O);
+                if (statusO != Status.InProgress)
+                {
+
+                    ClearAllTiles();
+                }
+            }
         }
 
         private void NotifyTile(Tile tile)
@@ -196,7 +233,8 @@ namespace TicTacToe.ViewModel
 
         private void ResetCommandAction()
         {
-            GamePlay.ResetScore();
+            ScoreO = 0;
+            ScoreX = 0;
             ClearAllTiles();
         }
 

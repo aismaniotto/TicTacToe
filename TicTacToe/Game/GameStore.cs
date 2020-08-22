@@ -1,4 +1,5 @@
-﻿using Xamarin.Essentials;
+﻿using System.Collections.Generic;
+using Xamarin.Essentials;
 
 namespace TicTacToe.Game
 {
@@ -16,7 +17,23 @@ namespace TicTacToe.Game
         const string Tile2x0 = "Tile2x0Key";
         const string Tile2x1 = "Tile2x1Key";
         const string Tile2x2 = "Tile2x2Key";
-        const int WinnerSumwinning = 15;
+        public const int WinningSum = 15;
+
+        public List<Player> GetAllTiles()
+        {
+            var tileList = new List<Player>();
+            tileList.Add(GetTile(Tile.Tile0x0));
+            tileList.Add(GetTile(Tile.Tile0x1));
+            tileList.Add(GetTile(Tile.Tile0x2));
+            tileList.Add(GetTile(Tile.Tile1x0));
+            tileList.Add(GetTile(Tile.Tile1x1));
+            tileList.Add(GetTile(Tile.Tile1x2));
+            tileList.Add(GetTile(Tile.Tile2x0));
+            tileList.Add(GetTile(Tile.Tile2x1));
+            tileList.Add(GetTile(Tile.Tile2x2));
+
+            return tileList;
+        }
 
         public Player GetCurrentPlayer()
         {

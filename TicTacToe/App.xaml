@@ -34,10 +34,11 @@
 
         <Style x:Key="GameTile" TargetType="Button">
             <Setter Property="BackgroundColor" Value="{DynamicResource PageBackgroundColor}" />
+            <Setter Property="TextColor" Value="{DynamicResource PrimaryTextColor}" />
             <Setter Property="VerticalOptions" Value="CenterAndExpand" />
             <Setter Property="HorizontalOptions" Value="Fill" />
             <Setter Property="HeightRequest" Value="150" />
-            <Setter Property="FontSize" Value="100" />
+            <Setter Property="FontSize" Value="70" />
             <Setter Property="CornerRadius" Value="0" />
         </Style>
 
