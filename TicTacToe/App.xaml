@@ -19,6 +19,19 @@
             <Setter Property="TextColor" Value="{DynamicResource PrimaryTextColor}" />
         </Style>
 
+        <Style x:Key="ScoreLabel" TargetType="Label">
+            <Setter Property="FontSize" Value="25" />
+            <Setter Property="HorizontalOptions" Value="Start" />
+        </Style>
+
+        <!--  Not used yet. Serves to show message below the game  -->
+        <Style x:Key="GameLabel" TargetType="Label">
+            <Setter Property="FontSize" Value="25" />
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="VerticalOptions" Value="End" />
+        </Style>
+
         <Style x:Key="GameTile" TargetType="Button">
             <Setter Property="BackgroundColor" Value="{DynamicResource PageBackgroundColor}" />
             <Setter Property="VerticalOptions" Value="CenterAndExpand" />

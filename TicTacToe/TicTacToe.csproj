@@ -19,5 +19,6 @@
     <Folder Include="ViewModel\" />
     <Folder Include="Themes\" />
     <Folder Include="Presentation\Pages\" />
+    <Folder Include="Game\" />
   </ItemGroup>
 </Project>
