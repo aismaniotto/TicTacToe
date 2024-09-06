@@ -1,4 +1,6 @@
-﻿namespace TicTacToe
+﻿using TicTacToe.Presentation.Pages;
+
+namespace TicTacToe
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new GameView();
         }
     }
 }
