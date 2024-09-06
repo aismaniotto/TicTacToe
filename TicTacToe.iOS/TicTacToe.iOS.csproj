@@ -130,10 +130,4 @@
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
-  <ItemGroup>
-    <ProjectReference Include="..\TicTacToe\TicTacToe.csproj">
-      <Project>{2A0F5922-FFC1-4F85-9E4E-68001C84CBD5}</Project>
-      <Name>TicTacToe</Name>
-    </ProjectReference>
-  </ItemGroup>
 </Project>
