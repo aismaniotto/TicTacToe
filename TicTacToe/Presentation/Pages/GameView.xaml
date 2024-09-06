@@ -19,6 +19,7 @@
                 Command="{Binding ResetCommand}"
                 HorizontalOptions="End"
                 Text="Limpar"
+                BackgroundColor="{StaticResource PrimaryColor}"
                 VerticalOptions="End" />
 
             <Label Style="{StaticResource ScoreLabel}">
@@ -37,17 +38,11 @@
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
-            <Grid Margin="0,20">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
+            <Grid Margin="0,20" 
+                  RowSpacing="5" 
+                  ColumnSpacing="5"
+                  RowDefinitions="*,*,*"
+                  ColumnDefinitions="*,*,*">
 
                 <Button
                     Grid.Row="0"

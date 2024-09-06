@@ -37,6 +37,7 @@
             <Setter Property="TextColor" Value="{DynamicResource PrimaryTextColor}" />
             <Setter Property="VerticalOptions" Value="CenterAndExpand" />
             <Setter Property="HorizontalOptions" Value="Fill" />
+            <Setter Property="MinimumWidthRequest" Value="150"/>
             <Setter Property="HeightRequest" Value="150" />
             <Setter Property="FontSize" Value="70" />
             <Setter Property="CornerRadius" Value="0" />
