@@ -1,9 +1,7 @@
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicTacToeCore", "TicTacToeCore\TicTacToeCore.csproj", "{784BD66A-1BF9-4A48-BBB6-22177945244B}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicTacToe", "TicTacToe\TicTacToe.csproj", "{FD8BFADE-10F9-4CDC-8BA7-4976529A7E92}"
 EndProject
 Global
@@ -16,18 +14,6 @@ Global
 		Release|iPhoneSimulator = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{784BD66A-1BF9-4A48-BBB6-22177945244B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{784BD66A-1BF9-4A48-BBB6-22177945244B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{784BD66A-1BF9-4A48-BBB6-22177945244B}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{784BD66A-1BF9-4A48-BBB6-22177945244B}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{784BD66A-1BF9-4A48-BBB6-22177945244B}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{784BD66A-1BF9-4A48-BBB6-22177945244B}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{784BD66A-1BF9-4A48-BBB6-22177945244B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{784BD66A-1BF9-4A48-BBB6-22177945244B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{784BD66A-1BF9-4A48-BBB6-22177945244B}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{784BD66A-1BF9-4A48-BBB6-22177945244B}.Release|iPhone.Build.0 = Release|Any CPU
-		{784BD66A-1BF9-4A48-BBB6-22177945244B}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{784BD66A-1BF9-4A48-BBB6-22177945244B}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{FD8BFADE-10F9-4CDC-8BA7-4976529A7E92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FD8BFADE-10F9-4CDC-8BA7-4976529A7E92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD8BFADE-10F9-4CDC-8BA7-4976529A7E92}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
